@@ -21,7 +21,7 @@ export default function NavBar() {
           href={navigator.pathname}
           className={makeClassNameToString(
             isCurrentPage(navigator.pathname) ? "custom-border current-pathname" : "",
-            "p-2 inline-block"
+            "p-2 inline-block active:text-emerald-400 hover:text-slate-500 transition-all ease-in-out delay-100"
           )}>
           {navigator.title}{" "}
         </Link>

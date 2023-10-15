@@ -14,14 +14,12 @@ async function fetchingBestSellers(): Promise<CustomResponse<BestSeller[]>> {
 export default async function Home() {
   const bestSellers = await fetchingBestSellers();
   return (
-    <div className="w-full flex flex-col gap-10">
-      <h1 className="capitalize text-5xl w-full p-5 rounded-lg font-extrabold">
-        THE NEW YORK TIMES BEST SELLER EXPLORER
-      </h1>
+    <div className="w-full flex flex-col gap-10 items-center">
+      <h1 className="capitalize text-7xl p-5 rounded-lg font-extrabold">THE NEW YORK TIMES BEST SELLER EXPLORER</h1>
       <div className="flex flex-wrap gap-6">
         {bestSellers.results.map((bestSeller) => (
           <div
-            className="custom-border border border-slate-700 p-3 text-xl font-semibold hover:bg-emerald-50 active:bg-emerald-900 active:text-slate-50"
+            className="custom-border border custom-button border-slate-700 p-3 text-xl font-semibold"
             key={bestSeller.display_name + bestSeller.newest_published_date}>
             <Link href={`/list/${bestSeller.list_name_encoded}`}>{bestSeller.list_name}</Link>
           </div>

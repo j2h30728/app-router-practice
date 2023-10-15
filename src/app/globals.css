@@ -12,3 +12,15 @@
   border-bottom-right-radius: 225px 15px;
   border-bottom-left-radius: 15px 255px;
 }
+.custom-button {
+  transition: all 0.2s ease;
+  border: solid 2px #3d3d3d;
+}
+.custom-button:hover {
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+  position: relative;
+  top: 1px;
+}
+.custom-button:active {
+  @apply text-emerald-500 border-2 border-emerald-500;
+}

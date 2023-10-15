@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html className={waitingForTheSunrise.className}>
       <body className="flex  min-h-screen flex-col items-center pt-28 px-20">
         <NavBar />
-        <div>{children}</div>
+        <div className="w-full">{children}</div>
       </body>
     </html>
   );
