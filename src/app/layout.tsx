@@ -14,7 +14,7 @@ const waitingForTheSunrise = Waiting_for_the_Sunrise({ weight: "400", subsets: [
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html className={waitingForTheSunrise.className}>
-      <body className="flex  min-h-screen flex-col items-center p-28">
+      <body className="flex  min-h-screen flex-col items-center pt-28 px-20">
         <NavBar />
         <div>{children}</div>
       </body>

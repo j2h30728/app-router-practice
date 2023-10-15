@@ -14,7 +14,7 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="fixed top-0 bg-slate-50 shadow-md flex justify-between w-full text-4xl font-extrabold py-4 px-10">
+    <nav className="z-10 fixed top-0 bg-slate-50 shadow-md flex justify-between w-full text-4xl font-extrabold py-4 px-10">
       {navigators.map((navigator) => (
         <Link
           key={navigator.title}
